@@ -1,0 +1,619 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 65%;
+}
+
+.header{
+    height: 85vh;
+    background-color: #F2EFEF;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+nav .list{
+    display: flex;
+    
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    padding: 20px;
+    text-decoration: none;
+    color: #948977;
+    font-size: 1em;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    padding : 1em 2em;
+}
+
+.btn-press{
+    background: #41B883;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.2s ease all;
+}
+
+.btn-press:hover{
+    background: #309e6c;
+    transform: scale(1.1);
+    
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero .judul{   
+    flex-direction: column;
+    height: 80vmin;
+    padding-top: 50px;
+    color : #41B883;
+    font-size: 2.3em;
+    animation : animasiMasuk 1.5s ease;
+    padding-right: 150px;  
+}
+
+
+.hero .icon{
+    position: relative;
+    right : 100px;
+}
+
+
+
+.hero .btn-press{ 
+    font-size: 0.5em;
+    margin-top: 40px ;
+}
+
+.hero .icon img{
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+.hero .icon img:nth-child(1){
+    top : 450px;
+    left : 50px;
+    animation: animasiIcon1 1s ease;
+}
+
+.hero .icon img:nth-child(2){
+    top : 100px;
+    left : 100px;
+    animation: animasiIcon2 1.5s ease;
+}
+
+.hero .icon img:nth-child(3){
+    top : 250px;
+    left : 400px;
+    animation: animasiIcon3 2s ease;
+}
+
+
+.hero .judul p:nth-child(1){
+    font-size: 0.6em;
+}
+
+.hero .judul p:nth-child(2){
+    font-size: 0.6em;
+    display: none;
+}
+
+.png img{
+    position: relative;
+    margin-top: 150px;
+    animation: animasiMasuk 1.5s ease;
+    height: 70vh;
+    
+}
+
+.skill{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    z-index: 999999;
+    background-color: white;
+}
+.skill .img{
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.skill2{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    z-index: 999999;
+    background-color: white;
+}
+
+.skill2 .text{
+    margin: 70px 0 100px 0 ;
+    font-weight: 300;
+}
+
+.skill2 .button{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 200px;
+}
+
+.experience{
+    display: flex;
+    justify-content: center;
+    background-color: #41B883;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 100px 0;
+    margin-top: 100px;
+}
+
+.experience h2{
+    font-size: 60px;
+    font-weight: 600;
+    
+}
+
+.experience p:nth-child(1){
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.experience p:nth-child(3){
+    margin: 25px 0;
+    font-weight: 300;
+}
+
+
+.button .card{
+    width: 20%;
+    padding: 25px;
+    border-radius: 5%;
+}
+
+.button .card:hover{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2)
+}
+
+.card img{
+    
+    margin-bottom: 40px;
+    border-radius: 50%;
+}
+.card h2{
+    padding-bottom: 20px;
+}
+
+.card p{
+    font-size: 0.8em;
+}
+
+.card button{
+    margin-top: 70px;
+    padding: 15px 40px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.card button:hover {
+    background: black;
+    color: white;
+    transition: 0.5s ease all;
+}
+
+
+
+.school{
+    margin-top: 150px;
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    gap: 100px;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+.school img{
+    border-radius: 30px;
+    
+}
+
+.school .foto{
+    display: flex;
+    align-items: center;
+}
+
+.school .foto img:hover{
+    animation: animasiGambar 0.8s ease;
+}
+
+.jelas p:nth-child(1){
+    color: rgb(65,184,131);
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.jelas h2 {
+    font-size: 3em;
+}
+.jelas img{
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.jelas .card{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 0 20px 0 0;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    
+}
+
+.jelas .card h3{
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.jelas .card:hover{
+    box-shadow: 0px 0px 20px 0px #888888;
+
+}
+
+footer{
+    background-color: #25362E;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 300;
+}
+.footer h2{
+    font-size: 2em;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer img{
+    padding: 10px 10px;
+}
+
+.portfolio{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.portfolio .bg{
+    background-color:#F2EFEF;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio .bag1{
+    padding: 100px 0px 300px 0;
+}
+
+.portfolio .bag1 p:nth-child(1){
+    color: rgb(65,184,131);
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.portfolio .bag1 h2{
+    font-size: 3em;
+}
+
+.portfolio .bag2{
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    gap: 100px;
+    justify-content: center;
+    position: relative;
+    top: -250px;
+}
+
+.portfolio .card2{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px ;
+}
+
+.portfolio .bag2 .card2 img{
+    max-height: 500px; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.portfolio .bag2 .card2 h2{
+    padding: 20px 0;
+}
+
+.card2 .text{
+    padding: 20px 0px 50px 40px;
+}
+
+
+/* RESPONSIVE */
+
+    /* HEADER */
+
+@media screen and (max-width : 1280px) {
+    .container{
+        width: 90%;
+    }
+
+    .judul h2{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .header{
+        height: 50vh;
+    }
+    .png img{
+        height: 50vw;
+        top : -100px;
+    }
+
+    .hero .icon img:nth-child(3){
+        left :320px;
+    }
+    .hero .icon img:nth-child(2){
+        left :50px;
+    }
+
+    .hero .icon img:nth-child(1){
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav .list{
+        display: none;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .header{
+        height: 100vh;
+    }
+
+    .hero{
+        flex-direction: column;
+        background-color: #F2EFEF;
+        justify-items: center;
+    }
+
+    .hero .png{order:1;}
+    .hero .judul{order:2;}
+
+    .png img{
+        position: relative;
+        height: 95vw;
+        left: 90px;
+        margin-top: 100px;
+        animation: animasiMasuk2 1.5s ease;
+        z-index: 100;
+    }
+    
+
+    .hero .icon img:nth-child(1){
+        top : 250px;
+        left : 150px;
+        height: 5em;
+    }
+
+    .hero .icon img:nth-child(2){
+        top: 40px;
+        left: 130px;
+        height: 4em;
+    }
+
+    .hero .icon img:nth-child(3){
+        top :150px;
+        left : 370px;
+        height: 4.5em;
+    }
+
+    .content-utama {
+        position: relative;
+        top: 300px;
+    }
+
+    .hero .judul p:nth-child(1){
+        display: none;
+    }
+    
+    
+
+    .hero .judul{
+        margin-top: -130px;
+        font-size: 2.3vmax;
+        text-align: center;
+        padding: 50px;
+        display: flex;
+        bottom: 120px;
+        animation: animasiMasuk3 1.5s ease;
+
+        
+    }
+
+    .hero .judul .btn-press{
+        font-size: 0.8em;
+        font-weight: 500;
+
+    }
+
+    .skill .img {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(3,70px);
+        width: 100%;
+    }
+
+
+
+
+    /* ANIMASI */
+
+    @keyframes animasiMasuk2 {
+
+        from{
+            position: relative;
+            bottom: -600px;
+            opacity: 0%;
+            
+        } to{
+            position: relative;
+            bottom : 90px;
+            opacity: 100%;
+            
+        }
+        
+    }
+
+    @keyframes animasiMasuk3 {
+
+        from{
+            position: relative;
+            bottom: -600px;
+            opacity: 0%;
+            
+        } to{
+            position: relative;
+            bottom : 120px;
+            opacity: 100%;
+            
+        }
+        
+    }
+
+}
+
+
+
+
+
+/* ANIMASI */
+
+@keyframes animasiMasuk {
+
+    from{
+        bottom: -600px;
+        opacity: 0%;
+        
+    } to{
+        bottom : 0;
+        opacity: 100%;
+        
+    }
+    
+}
+
+@keyframes animasiGambar {
+    from {
+        transform: scale(100%);
+    } to {
+        transform: scale(110%);
+    }
+}
+
+@keyframes animasiCard {
+    from {
+        opacity: 0%;
+    } to {
+        opacity: 100%;
+    }
+}
+
+@keyframes animasiIcon1 {
+    from {
+        top : -1000px;
+        opacity: 0%;
+    } to {
+        top : 450px;
+        opacity: 100%;
+    }
+}
+@keyframes animasiIcon2 {
+    from {
+        top : -1000px;
+        opacity: 0%;
+    } to {
+        top : 100px;
+        pacity: 100%;
+    }
+}
+@keyframes animasiIcon3 {
+    from {
+        top : -1000px;
+        opacity: 0%;
+    } to {
+        top : 250px;
+        opacity: 100%;
+    }
+}
+
+
+
