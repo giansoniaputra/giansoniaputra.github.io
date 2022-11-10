@@ -4,7 +4,8 @@
 }
 
 .container{
-    width: 65%;
+    width: 80%;
+    position: relative;
 }
 
 .header{
@@ -70,18 +71,17 @@ ul{
 
 .hero .judul{   
     flex-direction: column;
-    height: 80vmin;
     padding-top: 50px;
     color : #41B883;
-    font-size: 2.3em;
+    font-size: 2.1vw;
     animation : animasiMasuk 1.5s ease;
-    padding-right: 150px;  
+    padding-right: 500px;
 }
 
-
 .hero .icon{
-    position: relative;
-    right : 100px;
+    position: absolute;
+    right: 0;
+    padding-right: 420px;
 }
 
 
@@ -94,27 +94,25 @@ ul{
 .hero .icon img{
     position: absolute;
     border-radius: 50%;
+    height: 10vh;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
     
     
 }
 
 .hero .icon img:nth-child(1){
-    top : 450px;
-    left : 50px;
-    animation: animasiIcon1 1s ease;
+    top : 360px;
+    left : 90px;
 }
 
 .hero .icon img:nth-child(2){
     top : 100px;
-    left : 100px;
-    animation: animasiIcon2 1.5s ease;
+    left : 140px;
 }
 
 .hero .icon img:nth-child(3){
     top : 250px;
     left : 400px;
-    animation: animasiIcon3 2s ease;
 }
 
 
@@ -127,12 +125,15 @@ ul{
     display: none;
 }
 
+.png {
+    position: absolute;
+    right :0;
+    bottom: 0;
+    padding-bottom: 25px;
+}
+
 .png img{
-    position: relative;
-    margin-top: 150px;
-    animation: animasiMasuk 1.5s ease;
-    height: 70vh;
-    
+    height: 60vh;
 }
 
 .skill{
@@ -396,19 +397,7 @@ footer{
 
 /* ANIMASI */
 
-@keyframes animasiMasuk {
 
-    from{
-        bottom: -600px;
-        opacity: 0%;
-        
-    } to{
-        bottom : 0;
-        opacity: 100%;
-        
-    }
-    
-}
 
 @keyframes animasiGambar {
     from {
@@ -422,34 +411,6 @@ footer{
     from {
         opacity: 0%;
     } to {
-        opacity: 100%;
-    }
-}
-
-@keyframes animasiIcon1 {
-    from {
-        top : -1000px;
-        opacity: 0%;
-    } to {
-        top : 450px;
-        opacity: 100%;
-    }
-}
-@keyframes animasiIcon2 {
-    from {
-        top : -1000px;
-        opacity: 0%;
-    } to {
-        top : 100px;
-        pacity: 100%;
-    }
-}
-@keyframes animasiIcon3 {
-    from {
-        top : -1000px;
-        opacity: 0%;
-    } to {
-        top : 250px;
         opacity: 100%;
     }
 }
