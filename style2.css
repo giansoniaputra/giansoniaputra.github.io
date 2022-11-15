@@ -4,11 +4,12 @@
 }
 
 .container{
-    width: 65%;
+    width: 80%;
+    position: relative;
+    margin: auto;
 }
 
 .header{
-    height: 85vh;
     background-color: #F2EFEF;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
@@ -64,24 +65,56 @@ ul{
 }
 
 .hero{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding-bottom: 100px;
 }
 
 .hero .judul{   
-    flex-direction: column;
-    height: 80vmin;
     padding-top: 50px;
     color : #41B883;
-    font-size: 2.3em;
+    font-size: 3.5vmin;
     animation : animasiMasuk 1.5s ease;
-    padding-right: 150px;  
 }
 
-
-.hero .icon{
+.hero .png{
+    display: flex;
+    justify-content: end;
     position: relative;
-    right : 100px;
+    top: 65px;
+    right: 20px ;
+}
+
+.png .icon{
+    position:absolute;
+}
+
+.png .icon img{
+    position: relative;
+}
+
+.png .icon img:nth-child(1){
+    top : 489px;
+    left : 130px;
+}
+
+.png .icon img:nth-child(2){
+    top : 30px;
+    left : 150px;
+}
+
+.png .icon img:nth-child(3){
+    top : 250px;
+    left : 400px;
+}
+
+.png .gambar{
+    position: relative;
+}
+
+.png .gambar img{
+    height: 60vmin;
 }
 
 
@@ -92,29 +125,27 @@ ul{
 }
 
 .hero .icon img{
-    position: absolute;
+    /* position: absolute; */
     border-radius: 50%;
+    height: 10vh;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
     
     
 }
 
-.hero .icon img:nth-child(1){
-    top : 450px;
-    left : 50px;
-    animation: animasiIcon1 1s ease;
+/* .hero .icon img:nth-child(1){
+    top : 360px;
+    left : 90px;
 }
 
 .hero .icon img:nth-child(2){
     top : 100px;
-    left : 100px;
-    animation: animasiIcon2 1.5s ease;
+    left : 140px;
 }
 
 .hero .icon img:nth-child(3){
     top : 250px;
     left : 400px;
-    animation: animasiIcon3 2s ease;
 }
 
 
@@ -125,15 +156,18 @@ ul{
 .hero .judul p:nth-child(2){
     font-size: 0.6em;
     display: none;
-}
+} */
 
-.png img{
-    position: relative;
-    margin-top: 150px;
-    animation: animasiMasuk 1.5s ease;
-    height: 70vh;
-    
-}
+/* .png {
+    position: absolute;
+    right :0;
+    bottom: 0;
+    padding-bottom: 25px;
+} */
+
+/* .png img{
+
+} */
 
 .skill{
     display: flex;
@@ -166,39 +200,22 @@ ul{
     font-weight: 300;
 }
 
+.skill2 .text h3{
+    color:#41B883; 
+    margin-bottom: 10px;
+}
+
+.skill2 .text h2{
+    font-size: 3em ; 
+    margin-bottom: 20px;
+    
+}
+
 .skill2 .button{
     display: flex;
     justify-content: space-around;
     margin: 0 200px;
 }
-
-.experience{
-    display: flex;
-    justify-content: center;
-    background-color: #41B883;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    padding: 100px 0;
-    margin-top: 100px;
-}
-
-.experience h2{
-    font-size: 60px;
-    font-weight: 600;
-    
-}
-
-.experience p:nth-child(1){
-    font-weight: 600;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-.experience p:nth-child(3){
-    margin: 25px 0;
-    font-weight: 300;
-}
-
 
 .button .card{
     width: 20%;
@@ -239,6 +256,37 @@ ul{
     color: white;
     transition: 0.5s ease all;
 }
+
+.experience{
+    display: flex;
+    justify-content: center;
+    background-color: #41B883;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 100px 0;
+    margin-top: 100px;
+}
+
+
+.experience h2{
+    font-size: 60px;
+    font-weight: 600;
+    
+}
+
+.experience p:nth-child(1){
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.experience p:nth-child(3){
+    margin: 25px 0;
+    font-weight: 300;
+}
+
+
+
 
 
 
@@ -393,162 +441,164 @@ footer{
 
 /* RESPONSIVE */
 
-    /* HEADER */
-
-@media screen and (max-width : 1280px) {
+@media screen and (max-width: 768px) {
     .container{
         width: 90%;
     }
 
-    .judul h2{
-        font-size: 1.1em;
-    }
-}
-
-@media screen and (max-width: 1024px){
-    .header{
-        height: 50vh;
-    }
-    .png img{
-        height: 50vw;
-        top : -100px;
+    .list .btn .btn-press{
+        font-size: 4em;
     }
 
-    .hero .icon img:nth-child(3){
-        left :320px;
-    }
-    .hero .icon img:nth-child(2){
-        left :50px;
-    }
-
-    .hero .icon img:nth-child(1){
-        left: 20px;
-    }
-}
-
-@media screen and (max-width: 768px) {
     nav .list{
         display: none;
     }
-
-    .container{
-        width: 100%;
-    }
-
-    .header{
-        height: 100vh;
-    }
-
     .hero{
-        flex-direction: column;
-        background-color: #F2EFEF;
-        justify-items: center;
+        grid-template-columns: 1fr;
+        text-align: center;
     }
-
-    .hero .png{order:1;}
-    .hero .judul{order:2;}
-
-    .png img{
-        position: relative;
-        height: 95vw;
-        left: 90px;
-        margin-top: 100px;
-        animation: animasiMasuk2 1.5s ease;
-        z-index: 100;
-    }
-    
-
-    .hero .icon img:nth-child(1){
-        top : 250px;
-        left : 150px;
-        height: 5em;
-    }
-
-    .hero .icon img:nth-child(2){
-        top: 40px;
-        left: 130px;
-        height: 4em;
-    }
-
-    .hero .icon img:nth-child(3){
-        top :150px;
-        left : 370px;
-        height: 4.5em;
-    }
-
-    .content-utama {
-        position: relative;
-        top: 300px;
-    }
-
-    .hero .judul p:nth-child(1){
-        display: none;
-    }
-    
-    
 
     .hero .judul{
-        margin-top: -130px;
-        font-size: 2.3vmax;
-        text-align: center;
-        padding: 50px;
-        display: flex;
-        bottom: 120px;
-        animation: animasiMasuk3 1.5s ease;
-
-        
+        order: 2;
+    }
+    .hero .png{
+        justify-content: center;
+        top: 0;
+        right: 0;
     }
 
-    .hero .judul .btn-press{
-        font-size: 0.8em;
-        font-weight: 500;
-
+    .png .icon img:nth-child(1){
+        top : 200px;
+        left : 0px;
+    }
+    
+    .png .icon img:nth-child(2){
+        top :0px;
+        left : 30px;
+    }
+    
+    .png .icon img:nth-child(3){
+        top : 150px;
+        left : 45px;
     }
 
-    .skill .img {
+    .png .gambar img{
+        height: 80vmin;
+    }
+
+    .skill .img{
         display: grid;
-        gap: 30px;
-        grid-template-columns: repeat(3,70px);
-        width: 100%;
+        grid-template-columns: repeat(3,50px);
+        gap:10px;
     }
 
+    .skill2{
+        text-align: center;
+    }
 
-
-
-    /* ANIMASI */
-
-    @keyframes animasiMasuk2 {
-
-        from{
-            position: relative;
-            bottom: -600px;
-            opacity: 0%;
-            
-        } to{
-            position: relative;
-            bottom : 90px;
-            opacity: 100%;
-            
-        }
+    /* .skill2 .text h3{
         
+    } */
+    
+    .skill2 .text h2{
+        font-size: 1.5em ;
     }
 
-    @keyframes animasiMasuk3 {
-
-        from{
-            position: relative;
-            bottom: -600px;
-            opacity: 0%;
-            
-        } to{
-            position: relative;
-            bottom : 120px;
-            opacity: 100%;
-            
-        }
-        
+    .skill2 .text p{
+        font-size: 0.8em;
     }
 
+    .skill2 .button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .button .card{
+        width: 75%;
+        margin: auto;
+        padding: 25px;
+        border-radius: 5%;
+    }
+    
+    /* .button .card:hover{
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2)
+    } */
+    
+    .card img{
+        height: 75px;
+        margin-bottom: 40px;
+        border-radius: 50%;
+    }
+    .card h2{
+        padding-bottom: 10px;
+        font-size: 1.2em;
+    }
+    
+    .card p{
+        font-size: 0.7em;
+    }
+    
+    .card button{
+        margin-top: 70px;
+        padding: 15px 40px;
+        font-size: 1.1em;
+        border-radius: 10px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    
+    }
+
+    .experience > *{
+        font-size: 0.6em;
+    }
+
+    .experience h2{
+        font-size: 3em;
+    }
+
+    .experience .btn-press{
+        padding: 20px 70px; 
+        font-size: 1em; 
+        margin-top: 40px ; 
+        background-color: white; 
+        color:#41B883
+    }
+    
+
+    .portfolio .bag2{
+        grid-template-columns: repeat(1,250px);
+    }
+    .portfolio .bag2 .card2 img{
+        max-height: 175px; 
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+    .card2 .text{
+        padding: 5px 0px 15px 25px;
+        line-height: 10px;
+    }
+    .card2 .text > *{
+        font-size: 1em;
+    }
+    .portfolio .bag2 .card2 h2{
+        padding: 10px 0;
+    }
+
+    .portfolio .bg .bag1 > * {
+        font-size: 0.8em;
+    }
+
+    .portfolio .bg .bag1 p:nth-child(1) {
+        font-size: 1.2em;
+    }
+
+    .portfolio .bg .bag1 h2 {
+        font-size: 1.5em;
+    }
 }
 
 
@@ -557,21 +607,9 @@ footer{
 
 /* ANIMASI */
 
-@keyframes animasiMasuk {
 
-    from{
-        bottom: -600px;
-        opacity: 0%;
-        
-    } to{
-        bottom : 0;
-        opacity: 100%;
-        
-    }
-    
-}
 
-@keyframes animasiGambar {
+/* @keyframes animasiGambar {
     from {
         transform: scale(100%);
     } to {
@@ -585,35 +623,7 @@ footer{
     } to {
         opacity: 100%;
     }
-}
-
-@keyframes animasiIcon1 {
-    from {
-        top : -1000px;
-        opacity: 0%;
-    } to {
-        top : 450px;
-        opacity: 100%;
-    }
-}
-@keyframes animasiIcon2 {
-    from {
-        top : -1000px;
-        opacity: 0%;
-    } to {
-        top : 100px;
-        pacity: 100%;
-    }
-}
-@keyframes animasiIcon3 {
-    from {
-        top : -1000px;
-        opacity: 0%;
-    } to {
-        top : 250px;
-        opacity: 100%;
-    }
-}
+} */
 
 
 
