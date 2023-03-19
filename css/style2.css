@@ -626,4 +626,46 @@ footer{
 } */
 
 
+/* Paralax */
+.skill .img {
+    opacity: 0;
+    transform: translate(0,-40px);
+    transition: 0.5s;
+}
+
+.skill .img.muncul {
+    opacity: 100%;
+    transform: translate(0,0);
+}
+
+.skill2 .text{
+    opacity: 0;
+    transform: translate(0,-40px);
+    transition: 0.5s;
+}
+
+.skill2 .muncul{
+    opacity: 100%;
+    transform: translate(0,0);
+}
+
+.button {
+    opacity: 0;
+    transform: translate(0,-40px);
+    transition: 0.5s;
+}
+
+.button.muncul{
+    opacity: 100%;
+    transform: translate(0,0);
+}
+@keyframes muncul {
+    from {
+        opacity: 0%;
+    } to {
+        opacity: 100%;
+    }
+}
+
+
 

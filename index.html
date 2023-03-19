@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="/css/style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
         rel="stylesheet">
+    <script src="js/jquery-3.6.4.min.js"></script>
     <title>Gian Sonia</title>
 </head>
 
@@ -210,6 +211,41 @@
             </div>
         </div>
     </section> -->
+
+
+    <script>
+        $(document).ready(function(){
+            $(".gambar").css({
+                'animation-name':'animasiGambar'
+            })
+        })
+        $(window).scroll(function(){
+            let wScroll = $(this).scrollTop();
+            console.log(wScroll);
+            $(".gambar img").css({
+                'transform':'translate(0px, '+wScroll/8+'%)'
+            })
+            $(".judul").css({
+                'transform':'translate(0px, '+wScroll/6+'%)'
+            })
+            $(".icon").css({
+                'transform':'translate(0px, '+wScroll/4+'%)'
+            })
+
+
+            //Portpolio
+            if(wScroll > 300){
+                $(".skill .img").addClass('muncul')
+
+            }
+            if(wScroll > 500){
+                $(".skill2 .text").addClass('muncul')
+            }
+            if(wScroll > 700){
+                $(".button").addClass('muncul')
+            }
+        })
+    </script>
 
 
 </body>
