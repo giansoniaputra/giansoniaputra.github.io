@@ -292,6 +292,14 @@ ul{
     transition: 0.5s ease all;
 }
 
+.card a{
+    text-decoration: none;
+    color: black;
+}
+.card a:hover{
+    color: white;
+}
+
 .experience{
     display: flex;
     justify-content: center;
