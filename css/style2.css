@@ -75,7 +75,14 @@ ul{
     padding-top: 50px;
     color : #41B883;
     font-size: 3.5vmin;
-    animation : animasiMasuk 1.5s ease;
+    opacity: 0;
+    transform: translate(-60px,0);
+    transition: 0.9s;
+}
+
+.hero .judul.muncul{   
+    opacity: 100%;
+    transform: translate(0,0);
 }
 
 .hero .png{
@@ -96,21 +103,49 @@ ul{
 
 .png .icon img:nth-child(1){
     top : 489px;
-    left : 130px;
+    left : -50px;
+    opacity: 0;
+    transform: translate(0,-1000px);
+    transition: 0.7s ease-in-out;
 }
 
 .png .icon img:nth-child(2){
     top : 30px;
-    left : 150px;
+    left : -150px;
+    opacity: 0;
+    transform: translate(0,-700px);
+    transition: 0.9s ease-in-out;
 }
 
 .png .icon img:nth-child(3){
-    top : 250px;
-    left : 400px;
+    top : 350px;
+    left : 100px;
+    opacity: 0;
+    transform: translate(0,-400px);
+    transition: 1.2s ease-in-out;
+}
+.png .icon img:nth-child(1).muncul{
+    opacity: 100%;
+    transform: translate(0,0);
+}
+.png .icon img:nth-child(2).muncul{
+    opacity: 100%;
+    transform: translate(0,0);
+}
+.png .icon img:nth-child(3).muncul{
+    opacity: 100%;
+    transform: translate(0,0);
 }
 
 .png .gambar{
     position: relative;
+    opacity: 0;
+    transform: translate(0,60px);
+    transition: 0.5s ease-in;
+}
+.png .gambar.muncul{
+    opacity: 100%;
+    transform: translate(0,0);
 }
 
 .png .gambar img{
@@ -630,7 +665,7 @@ footer{
 .skill .img {
     opacity: 0;
     transform: translate(0,40px);
-    transition: 0.5s;
+    transition: 0.9s;
 }
 
 .skill .img.muncul {
@@ -641,7 +676,7 @@ footer{
 .skill2 .text{
     opacity: 0;
     transform: translate(0,40px);
-    transition: 0.5s;
+    transition: 0.9s;
 }
 
 .skill2 .muncul{
@@ -652,13 +687,58 @@ footer{
 .button {
     opacity: 0;
     transform: translate(0,60px);
-    transition: 0.5s;
+    transition: 0.9s;
 }
 
 .button.muncul{
     opacity: 100%;
     transform: translate(0,0);
 }
+
+.experience .container{
+    opacity: 0;
+    transform: translate(-60px,0);
+    transition: 0.9s;
+}
+
+.experience .container.muncul{
+    opacity: 100%;
+    transform: translate(0,0);
+}
+
+.portfolio .bg{
+    opacity: 0;
+    transform: translate(-60px,0);
+    transition: 0.9s;
+}
+
+.portfolio .bg.muncul{
+    opacity: 100%;
+    transform: translate(0,0);
+}
+
+.portfolio .bag2{
+    opacity: 0;
+    transform: translate(0,-40px);
+    transition: 0.9s;
+}
+
+.portfolio .bag2.muncul{
+    opacity: 100%;
+    transform: translate(0,0);
+}
+
+.footer{
+    opacity: 0;
+    transform: translate(0,-60px);
+    transition: 0.9s;
+}
+
+.footer.muncul{
+    opacity: 100%;
+    transform: translate(0,0);
+}
+
 @keyframes muncul {
     from {
         opacity: 0%;

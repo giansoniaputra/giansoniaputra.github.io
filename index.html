@@ -88,7 +88,8 @@
             <div class="card">
                 <img src="img/Website.png" alt="">
                 <h2>Back End Develover</h2>
-                <p>Saya adalah orang yang mampu bekerja di Back End sebuah Website dengan kemahiran di framework Laravel</p>
+                <p>Saya adalah orang yang mampu bekerja di Back End sebuah Website dengan kemahiran di framework Laravel
+                </p>
                 <button type="button">See More ➡</button>
             </div>
         </div>
@@ -102,7 +103,7 @@
             <p>Selama tiga tahun ini saya telah mengerjakan banyak projek desain <br> diantaranya desain logo,
                 Pamflet
                 dan lainnya.</p>
-            <a href="https://wa.me/6282321634181" target="_blank"><button type="button" class="btn btn-press">Contact
+            <a href="https://wa.me/6282321634181" target="_blank"><button type="button" class="btn btn-press" style="background-color: white; color: #41B883;">Contact
                     Me
                 </button></a>
         </div>
@@ -129,7 +130,6 @@
     </section> -->
 
     <section class="portfolio">
-        <div class="container"></div>
         <div class="bg">
             <div class="container bag1">
                 <p>------- Project</p>
@@ -214,35 +214,40 @@
 
 
     <script>
-        $(document).ready(function(){
-            $(".gambar").css({
-                'animation-name':'animasiGambar'
-            })
+        $(document).ready(function () {
+            $(".hero .judul").addClass('muncul')
+            $(".png .gambar").addClass('muncul')
+            $(".png .icon img:nth-child(1)").addClass('muncul')
+            $(".png .icon img:nth-child(2)").addClass('muncul')
+            $(".png .icon img:nth-child(3)").addClass('muncul')
         })
-        $(window).scroll(function(){
+        $(window).scroll(function () {
             let wScroll = $(this).scrollTop();
             console.log(wScroll);
-            $(".gambar img").css({
-                'transform':'translate(0px, '+wScroll/8+'%)'
-            })
-            $(".judul").css({
-                'transform':'translate(0px, '+wScroll/6+'%)'
-            })
-            $(".icon").css({
-                'transform':'translate(0px, '+wScroll/4+'%)'
-            })
-
-
             //Portpolio
-            if(wScroll > 300){
+            if (wScroll > 300) {
                 $(".skill .img").addClass('muncul')
 
             }
-            if(wScroll > 500){
+            if (wScroll > 500) {
                 $(".skill2 .text").addClass('muncul')
             }
-            if(wScroll > 700){
+            if (wScroll > 700) {
                 $(".button").addClass('muncul')
+            }
+            if (wScroll > 1400) {
+                $(".experience .container").addClass('muncul')
+            }
+            if (wScroll > 2170) {
+                $(".portfolio .bg").addClass('muncul')
+            }
+
+            if (wScroll > 2500) {
+                $(".portfolio .bag2").addClass('muncul')
+            }
+
+            if (wScroll > 4000) {
+                $(".footer").addClass('muncul')
             }
         })
     </script>
