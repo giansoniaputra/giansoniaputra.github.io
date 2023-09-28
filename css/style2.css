@@ -102,7 +102,7 @@ ul{
 }
 
 .png .icon img:nth-child(1){
-    top : 489px;
+    top : 400px;
     left : -50px;
     opacity: 0;
     transform: translate(0,-1000px);
@@ -511,7 +511,7 @@ footer{
     }
 
     .png .icon img:nth-child(1){
-        top : 200px;
+        top : 150px;
         left : 0px;
     }
     
