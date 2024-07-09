@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="stylesheet" href="css/style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
         rel="stylesheet">
     <script src="js/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.2/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.2/dist/sweetalert2.all.min.js"></script>
     <title>Gian Sonia</title>
 </head>
 
@@ -23,7 +25,7 @@
                 <div class="list">
                     <ul>
                         <li><a href="">Home</a></li>
-                        <li><a href="#experience">About</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#portfolio">Project</a></li>
                         <li><a href="CV/Curriculum Vitae Gian Sonia.pdf" class="btn btn-press" download>Download CV</a>
                         </li>
@@ -38,7 +40,7 @@
                     <ul class="menu-items">
                         <li style="padding-top: 10vh;"><a href="">Home</a></li>
                         <br>
-                        <li><a href="#experience">About</a></li>
+                        <li><a href="#about">About</a></li>
                         <br>
                         <li><a href="#portfolio">Project</a></li>
                         <br>
@@ -55,7 +57,7 @@
                     <p>------- Gian Sonia</p>
                     <h2>Hello, my name is
                         Gian Sonia.</h2>
-                    <h2>I'm BackEnd Developer</h2>
+                    <h2>I'm Web Developer</h2>
                     <a href="https://wa.me/6282321634181" target="_blank"><button type="button"
                             class="btn btn-press">Contact Me
                             ➡</button></a>
@@ -87,18 +89,20 @@
         </div>
     </section>
 
-    <section class="container skill2">
+    <section class="container skill2" id="about">
         <div class="text">
-            <h3>What I Do</h3>
-            <h2>Service Offer</h2>
-            <p>Saya menawarkan jasa pembuatan Website. Website Company Profile ataupun Website untuk kepeluan input
-                data.</p>
+            <h3>What can I Do?</h3>
+            <h2>About Me</h2>
+            <p>Saya adalah seorang programmer dengan pengalaman selama tiga tahun di industri teknologi. Saya juga
+                terbiasa mengembangkan aplikasi menggunakan framework laravel dan telah membuat beberapa aplikasi
+                permintaan client dengan menggunakan framework ini. Saya sangat antusias untuk bergabung dengan tim
+                pengembangan Anda dan berkontribusi dalam mencapai tujuan perusahaan</p>
         </div>
         <div class="button">
             <div class="card">
                 <img src="img/Website.png" alt="">
                 <h2>Back End Develover</h2>
-                <p>Saya adalah orang yang mampu bekerja di Back End sebuah Website dengan kemahiran di framework Laravel
+                <p>Saya mampu mengerjakan tugas di bidang backend seperti menintegrasikan aplikasi dengan database, membuat fitur CRUD baik menggunakan CRUD biasa atau berbasis Restful dan membuat integration test nya.
                 </p>
                 <button type="button"><a href="https://github.com/giansoniaputra" target="_blank">See More
                         ➡</a></button>
@@ -106,7 +110,7 @@
             <div class="card">
                 <img src="img/Desain.png" alt="">
                 <h2>Full Stack Developer</h2>
-                <p>Saya juga terkadang sering menyelesaikan beberapa project Full Stack
+                <p>Saya mampu mengerjakan project Web sebagai Frontend dan Backend sekaligus dengan bantuan tools Framework Laravel, HTML,CSS dan Javascript. serta melakukan deployment ke server.
                 </p>
                 <button type="button"><a href="https://github.com/giansoniaputra" target="_blank">See More
                         ➡</a></button>
@@ -116,8 +120,8 @@
 
     <section class="experience" id="experience">
         <div class="container">
-            <p>------- Backend Developer</p>
-            <h2>With 3 years <br> Experience <br> Backend <br> Developer</h2>
+            <p>------- Web Developer</p>
+            <h2>With 3 years <br> Experience <br> Web <br> Developer</h2>
             <p>Selama tiga tahun ini saya telah mengerjakan banyak projek website <br> diantaranya website showroom,
                 Website Akademik
                 dan lainnya yang telah saya selesaikan semenjak saya berada di bangku perkuliahan.</p>
@@ -153,38 +157,39 @@
             <div class="container bag1">
                 <p>------- Project</p>
                 <h2>Selected Project</h2>
-                <p>Ini merupakan beberapa hasil dari project yang telah kami kerjakan</p>
+                <p>Ini merupakan beberapa hasil dari project yang telah saya kerjakan</p>
             </div>
         </div>
         <div class="bag2">
             <div class="card2">
-                <img src="img/portfolio/sismac.png" alt="">
+                <img src="img/portfolio/pulih-farma.png" alt="">
                 <div class="text">
-                    <h2>Sismac</h2>
-                    <p>Website</p>
+                    <h2>Apps Apotek Pulih Farma</h2>
+                    <p class="click-me" data-id="1">Click Here for More</p>
                 </div>
             </div>
             <div class="card2">
-                <img src="img/portfolio/website.png" alt="">
+                <img src="img/portfolio/sismac.png" alt="">
                 <div class="text">
-                    <h2>Tampilan E-Commerce</h2>
-                    <p>Website</p>
+                    <h2>SISMAC</h2>
+                    <p class="click-me" data-id="2">Click Here for More</p>
                 </div>
             </div>
             <div class="card2">
                 <img src="img/portfolio/wedding.png" alt="">
                 <div class="text">
                     <h2>IO Wedding</h2>
-                    <p>Website</p>
+                    <p class="click-me" data-id="3">Click Here for More</p>
                 </div>
             </div>
             <div class="card2">
                 <img src="img/portfolio/school.png" alt="">
                 <div class="text">
                     <h2>Online School</h2>
-                    <p>Website</p>
+                    <p class="click-me" data-id="4">Click Here for More</p>
                 </div>
             </div>
+            <a href="https://www.instagram.com/giansonia.io/" target="_blank">More About Project >></a>
         </div>
     </section>
 
@@ -276,6 +281,55 @@
         burgerIcon.addEventListener('click', () => {
             menuItems.classList.toggle('active');
         });
+
+        $(".portfolio").on("click", ".click-me" ,function(){
+            let id = $(this).data("id");
+            if(id == 1) {
+                var text = `<p style="text-align:left">Project ini merupakan project yang bekerja sama dengan apotek pulih farma sebagai client. Aplikasi ini mempunyai fitur diantaranya:</p>
+                <br>
+                <div style="display:flex; justify-content: start;">
+                    <ul style="display:flex; flex-direction:column;align-items:start">
+                        <li>Manajemen Obat</li>    
+                        <li>Manajemen Stok Obat</li>    
+                        <li>Manajemen Pembelian</li>    
+                        <li>Manajemen Penjualan</li>    
+                        <li>Manajemen Return Barang</li>    
+                        <li>Manajemen Stok Opname</li>    
+                    </ul>    
+                </div>
+                <br>
+                <p style="text-align:left">Aplikasi ini dibangun menggunakan framework laravel</p>
+                `
+            } else if(id == 2) {
+                var text = `<p style="text-align:left">Project ini merupakan project yang bekerja sama dengan Mandiri Utama Finance dan Showroom Riffat Jaya Motor sebagai client. aplikasi ini bertujuan untuk mencatat pemasukan dan pengeluaran transaksi serta manajemen stok motor. Aplikasi ini dibangun menggunakan framework laravel</p>
+                `
+            } else if(id == 3){
+                var text = `<p style="text-align:left">Project ini merupakan project yang dikembangkan untuk maksud membuat udadangan digital, aplikasi ini bersifat dinamais dimana aplikasi ini dapat menghasilkan banyak tampilan undangan untuk mempelai yang berbeda-beda. aplikasi ini terdiri dari CRUD yang bertujuan untuk mengimput data pasangan mempelai. apliasi ini dibangun dengan menggunakan framework laravel. <a href="https://io-wedding.my.id/latip-utari-sarimanah-s-pd" target="_blank">Click Here for Example</a></p>
+                `
+
+            } else if(id == 4) {
+                var text = `<p style="text-align:left">Project ini merupakan project yang bekerja sama dengan SMP Persis Gamdok. Aplikasi ini bertujuan sebagai mencatat presensi siswa. Aplikasi ini memanfaatkan web service Twilio sebagai media pemberitahuan absensi kehadiran siswa kepada orang tua menggunakan WhatsApp Aplikasi ini mempunyai fitur diantaranya:</p>
+                <br>
+                <div style="display:flex; justify-content: start;">
+                    <ul style="display:flex; flex-direction:column;align-items:start">
+                        <li>Manajemen Tahun Ajaran</li>    
+                        <li>Manajemen Mata Pelajaran</li>    
+                        <li>Manajemen Guru</li>    
+                        <li>Manajemen Presensi Siswa</li>    
+                    </ul>    
+                </div>
+                <br>
+                <p style="text-align:left">Aplikasi ini dibangun menggunakan framework laravel dengan bantuan API/Webservice Twilio</p>
+                `
+            }
+            Swal.fire({
+                position: "center",
+                icon: "info",
+                html: text,
+                showConfirmButton: false,
+            });
+        })
+
     </script>
 
 
