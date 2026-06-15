@@ -2,340 +2,371 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <!-- META -->
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bentos - Creative Portfolio Showcase Template">
+    <meta name="keywords"
+        content="personal, portfolio new, html, one page, bootstrap, new html template, design, creative, onepage, clean, modern">
+    <meta name="author" content="Tanvir Hossain">
+    <!-- PAGE TITLE -->
+    <title>Gian - Portfolio</title>
+    <!-- FAV ICON -->
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+    <!-- ALL GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <script src="js/jquery-3.6.4.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.2/dist/sweetalert2.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.2/dist/sweetalert2.all.min.js"></script>
-    <title>Gian Sonia</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="assets/fonts/remixicon.css" />
+    <!-- MAGNIFIC CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- NICE SELECT CSS -->
+    <link rel="stylesheet" href="assets/css/nice-select.min.css" />
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!-- SLICK CSS -->
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+    <!-- SPACING CSS -->
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <!-- MAIN STYLE CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-
-    <div class="header">
-        <div class="container">
-            <nav>
-                <h2>GIAN SONIA</h2>
-                <div class="list">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Project</a></li>
-                        <li><a href="CV/Curriculum Vitae Gian Sonia.pdf" class="btn btn-press" download>Download CV</a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="burger-menu">
-                    <div class="burger-icon">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                    <ul class="menu-items">
-                        <li style="padding-top: 10vh;"><a href="">Home</a></li>
-                        <br>
-                        <li><a href="#about">About</a></li>
-                        <br>
-                        <li><a href="#portfolio">Project</a></li>
-                        <br>
-                        <br>
-                        <li><a href="CV/Curriculum Vitae Gian Sonia.pdf" class="btn btn-press" download>Download CV</a>
-                            <br>
-                    </ul>
-                </div>
-
-            </nav>
-
-            <div class="hero">
-                <div class="judul">
-                    <p>------- Gian Sonia</p>
-                    <h2>Hello, my name is
-                        Gian Sonia.</h2>
-                    <h2>I'm Web Developer</h2>
-                    <a href="https://wa.me/6282321634181" target="_blank"><button type="button"
-                            class="btn btn-press">Contact Me
-                            ➡</button></a>
-                </div>
-                <div class="png">
-                    <div class="icon">
-                        <img src="img/icon/html5_color.png" alt="">
-                        <img src="img/icon/js_color.png" alt="">
-                        <img src="img/icon/php_color.png" alt="">
-                    </div>
-                    <div class="gambar">
-                        <img src="img/gian.png" alt="">
-                    </div>
-                </div>
+    <!-- START PRELOADER AREA-->
+    <div class="preloader">
+        <svg viewbox="0 0 1000 1000" preserveaspectratio="none">
+            <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+        </svg>
+        <div class="preloader-heading">
+            <div class="load-text">
+                <span>L</span>
+                <span>o</span>
+                <span>a</span>
+                <span>d</span>
+                <span>i</span>
+                <span>n</span>
+                <span>g</span>
             </div>
         </div>
     </div>
-
-    <section class="skill">
+    <!-- END PRELOADER AREA -->
+    <!-- START MENU DESIGN AREA -->
+    <header class="main-header">
+        <div class="header-upper">
+            <div class="container">
+                <div class="header-inner d-flex align-items-center">
+                    <!-- START LOGO DESIGN AREA -->
+                    <div class="logo-outer">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo.png" alt="Logo" title="Logo" /></a>
+                        </div>
+                    </div>
+                    <!-- / END LOGO DESIGN AREA -->
+                    <!-- START NAV DESIGN AREA -->
+                    <div class="nav-outer clearfix mx-auto">
+                        <!-- Main Menu -->
+                        <nav class="main-menu navbar-expand-lg">
+                            <div class="navbar-header">
+                                <div class="mobile-logo">
+                                    <a href="index.html">
+                                        <img src="assets/images/logo.png" alt="Logo" title="Logo" />
+                                    </a>
+                                </div>
+                                <!-- Toggle Button -->
+                                <button type="button" class="navbar-toggle" data-bs-toggle="collapse"
+                                    data-bs-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="navbar-collapse collapse">
+                                <ul class="navigation onepage clearfix">
+                                    <li><a class="nav-link-click" href="index.html">Home</a></li>
+                                    <li><a class="nav-link-click" href="about.html">about</a></li>
+                                    <li><a class="nav-link-click" href="service.html">services</a></li>
+                                    <li><a class="nav-link-click" href="works.html">works</a></li>
+                                    <li><a class="nav-link-click" href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- / END NAV DESIGN AREA -->
+                    </div>
+                    <div class="menu-btns">
+                        <a target="_blank"
+                            href="https://wa.me/6282321634181?text=Hallo mas Gian, saya kebetulan melihat portfolio anda dan saya ingin berbicara lebih lanjut dengan anda"
+                            class="theme-btn">Contact Me<i class="ri-shake-hands-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- / END MENU DESIGN AREA -->
+    <!-- START ABOUT DESIGN AREA -->
+    <section id="about" class="about-area">
         <div class="container">
-            <div class="img">
-                <img src="img/icon/html.png" alt="">
-                <img src="img/icon/css.png" alt="">
-                <img src="img/icon/php.png" alt="">
-                <img src="img/icon/js.png" alt="">
-                <img src="img/icon/MySql.png" alt="">
-                <img src="img/icon/laravel.png" alt="">
+            <div class="row">
+                <!-- START ABOUT IMAGE DESIGN AREA -->
+                <div class="col-lg-4">
+                    <div class="about-image-part wow fadeInUp delay-0-3s">
+                        <img src="assets/images/about/profile.png" style="border-radius: 10px;" alt="About Me" />
+                        <h2>Gian Sonia</h2>
+                        <p>I am a Web Developer and Designer</p>
+                        <div class="about-social text-center">
+                            <ul>
+                                <li><a target="_blank" href="https://linkedin.com/in/gian-sonia-744059222"><i
+                                            class="ri-linkedin-fill"></i></a>
+                                </li>
+                                <li><a target="_blank" href="https://github.com/giansoniaputra"><i
+                                            class="ri-github-line"></i></a></li>
+                                <li><a target="_blank"
+                                        href="https://wa.me/6282321634181?text=Hallo mas Gian, saya kebetulan melihat portfolio anda dan saya ingin berbicara lebih lanjut dengan anda"><i
+                                            class="ri-whatsapp-line"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- / END ABOUT IMAGE DESIGN AREA -->
+                <!-- START ABOUT TEXT DESIGN AREA -->
+                <div class="col-lg-8">
+                    <div class="about-content-part wow fadeInUp delay-0-2s">
+                        <p>Hello There!</p>
+                        <h2>
+                            I’m Gian Sonia, a Laravel developer crafting scalable web applications
+                            with clean architecture and pixel-perfect interfaces.
+                        </h2>
+                        <div class="adress-field">
+                            <ul>
+                                <li><i class="ri-circle-fill"></i>Open to Work</li>
+                            </ul>
+                        </div>
+                        <div class="hero-btns">
+                            <a href="#portfolio" class="theme-btn">Selected Project</a>
+                            <a href="about.html" class="theme-btn">About Me</a>
+                        </div>
+                    </div>
+                    <div class="about-content-part-bottom wow fadeInUp delay-0-2s">
+                        <h2>My Skill</h2>
+                        <div class="company-list">
+                            <div class="scroller" data-direction="left" data-speed="slow">
+                                <div class="scroller__inner">
+                                    <img src="assets/images/client-logos/laravel.png" alt="" />
+                                    <img src="assets/images/client-logos/php.png" alt="" />
+                                    <img src="assets/images/client-logos/ci.png" alt="" />
+                                    <img src="assets/images/client-logos/js.png" alt="" />
+                                    <img src="assets/images/client-logos/html.png" alt="" />
+                                    <img src="assets/images/client-logos/css.png" alt="" />
+                                    <img src="assets/images/client-logos/bootstrap.png" alt="" />
+                                    <img src="assets/images/client-logos/linux.png" alt="" />
+                                    <img src="assets/images/client-logos/mysql.png" alt="" />
+                                    <img src="assets/images/client-logos/postgre.png" alt="" />
+                                    <img src="assets/images/client-logos/figma.png" alt="" />
+                                    <img src="assets/images/client-logos/photoshop.png" alt="" />
+                                    <img src="assets/images/client-logos/illustrator.png" alt="" />
+                                    <img src="assets/images/client-logos/ae.png" alt="" />
+                                    <img src="assets/images/client-logos/premiere pro.png" alt="" />
+                                    <img src="assets/images/client-logos/canva.png" alt="" />
+                                    <img src="assets/images/client-logos/capcut.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / END ABOUT TEXT DESIGN AREA -->
             </div>
         </div>
     </section>
-
-    <section class="container skill2" id="about">
-        <div class="text">
-            <h3>What can I Do?</h3>
-            <h2>About Me</h2>
-            <p>Saya adalah seorang programmer dengan pengalaman selama empat tahun di industri teknologi. Saya juga
-                terbiasa mengembangkan aplikasi menggunakan framework laravel dan telah membuat beberapa aplikasi
-                permintaan client dengan menggunakan framework ini. Saya sangat antusias untuk bergabung dengan tim
-                pengembangan Anda dan berkontribusi dalam mencapai tujuan perusahaan</p>
-        </div>
-        <div class="button">
-            <div class="card">
-                <img src="img/Website.png" alt="">
-                <h2>Back End Develover</h2>
-                <p>Saya mampu mengerjakan tugas di bidang backend seperti menintegrasikan aplikasi dengan database, membuat fitur CRUD baik menggunakan CRUD biasa atau berbasis Restful dan membuat integration test nya.
-                </p>
-                <button type="button"><a href="https://github.com/giansoniaputra" target="_blank">See More
-                        ➡</a></button>
-            </div>
-            <div class="card">
-                <img src="img/Desain.png" alt="">
-                <h2>Full Stack Developer</h2>
-                <p>Saya mampu mengerjakan project Web sebagai Frontend dan Backend sekaligus dengan bantuan tools Framework Laravel, HTML,CSS dan Javascript. serta melakukan deployment ke server.
-                </p>
-                <button type="button"><a href="https://github.com/giansoniaputra" target="_blank">See More
-                        ➡</a></button>
-            </div>
-        </div>
-    </section>
-
-    <section class="experience" id="experience">
+    <!-- / END ABOUT DESIGN AREA -->
+    <!-- START PORTFOLIO DESIGN AREA -->
+    <section id="portfolio" class="projects-area">
         <div class="container">
-            <p>------- Web Developer</p>
-            <h2>With 4 years <br> Experience <br> Web <br> Developer</h2>
-            <p>Selamat empat tahun ini saya telah mengerjakan banyak projek website <br> diantaranya website showroom,
-                Website Akademik
-                dan lainnya yang telah saya selesaikan semenjak saya berada di bangku perkuliahan.</p>
-            <a href="https://wa.me/6282321634181" target="_blank"><button type="button" class="btn btn-press"
-                    style="background-color: white; color: #41B883;">Contact
-                    Me
-                </button></a>
+            <div class="container-inner">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12">
+                        <div class="section-title text-center wow fadeInUp delay-0-2s">
+                            <h2>Works & Projects</h2>
+                            <p>Explore some of my web development projects, carefully built with clean code,
+                                modern design, and a strong focus on user experience and functionality.</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="project-filter filter-btns-one justify-content-left pb-15 wow fadeInUp delay-0-2s">
+                    <li data-filter="*" class="current">Show All</li>
+                    <li data-filter=".design">Programming</li>
+                    <li data-filter=".branding">Design</li>
+                </ul>
+                <div class="row project-masonry-active">
+
+                    <!-- START SINGLE PORTFOLIO DESIGN AREA -->
+                    <div class="col-lg-4 col-md-6 item design">
+                        <div class="project-item style-two wow fadeInUp delay-0-5s">
+                            <div class="project-image">
+                                <img src="assets/images/client-logos/coffee.png" alt="Project">
+                                <a href="assets/images/client-logos/coffee2.png" class="details-btn work-popup"><i
+                                        class="ri-arrow-right-up-line"></i></a>
+                            </div>
+                            <div class="project-content">
+                                <span class="sub-title">Programming</span>
+                                <a target="_blank" href="https://coffee.harasotech.com/auth">
+                                    <h3>Website Coffee Shop (dengan Payment Geteway Midtrans)</h3>
+                                </a>
+                                <a target="_blank" href="https://coffee.harasotech.com/auth">Try the Apps >></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / END SINGLE PORTFOLIO DESIGN AREA -->
+                    <!-- START SINGLE PORTFOLIO DESIGN AREA -->
+                    <div class="col-lg-4 col-md-6 item design">
+                        <div class="project-item style-two wow fadeInUp delay-0-5s">
+                            <div class="project-image">
+                                <img src="assets/images/client-logos/online-school.png" alt="Project">
+                                <a href="assets/images/client-logos/online-school2.png"
+                                    class="details-btn work-popup"><i class="ri-arrow-right-up-line"></i></a>
+                            </div>
+                            <div class="project-content">
+                                <span class="sub-title">Programming</span>
+                                <a target="_blank" href="https://online-school.harasotech.com/auth">
+                                    <h3>Website Presensi dengan Notifikasi Whatsapp menggunakan Twilio</h3>
+                                </a>
+                                <a target="_blank" href="https://online-school.harasotech.com/auth">Try the Apps >></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / END SINGLE PORTFOLIO DESIGN AREA -->
+                    <!-- START SINGLE PORTFOLIO DESIGN AREA -->
+                    <div class="col-lg-4 col-md-6 item design">
+                        <div class="project-item style-two wow fadeInUp delay-0-5s">
+                            <div class="project-image">
+                                <img src="assets/images/client-logos/showroom.png" alt="Project">
+                                <a href="assets/images/client-logos/showroom2.png" class="details-btn work-popup"><i
+                                        class="ri-arrow-right-up-line"></i></a>
+                            </div>
+                            <div class="project-content">
+                                <span class="sub-title">Programming</span>
+                                <a target="_blank" href="https://showroom.harasotech.com/auth">
+                                    <h3>Website Showroom Motor</h3>
+                                </a>
+                                <br>
+                                <a target="_blank" href="https://showroom.harasotech.com/auth">Try the Apps >></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / END SINGLE PORTFOLIO DESIGN AREA -->
+                    <!-- START SINGLE PORTFOLIO DESIGN AREA -->
+                    <div class="col-lg-4 col-md-6 item design">
+                        <div class="project-item style-two wow fadeInUp delay-0-5s">
+                            <div class="project-image">
+                                <img src="assets/images/client-logos/bnpb.png" alt="Project">
+                                <a href="assets/images/client-logos/bnpb2.png" class="details-btn work-popup"><i
+                                        class="ri-arrow-right-up-line"></i></a>
+                            </div>
+                            <div class="project-content">
+                                <span class="sub-title">Programming</span>
+                                <a target="_blank" href="https://bnpb.harasotech.com">
+                                    <h3>Website Artikel Bencana Siaga KIA (BNPB)</h3>
+                                </a>
+                                <br>
+                                <a target="_blank" href="https://bnpb.harasotech.com">Try the Apps >></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / END SINGLE PORTFOLIO DESIGN AREA -->
+                </div>
+            </div>
         </div>
     </section>
-
-
-    <!-- <section class="school">
-        <div class="foto">
-            <img src="img/teamwork.png" alt="">
-        </div>
-        <div class="jelas">
-            <p>------- Why Choose Us </p>
-            <h2>Cepat dan Kualitas <br> Produk</h2>
-            <p>Dua alasan kenapa anda harus memilih kami</p>
-            <div class="card">
-                <img src="img/icon/cepat.png" alt="">
-                <h3>Apapun yang anda inginkan, kami akan selesaikan dalam waktu singkat</h3>
-            </div>
-            <div class="card">
-                <img src="img/icon/kualitas.png" alt="">
-                <h3>Kami menjanjikan kualitas yang terbaik bagi desain anda</h3>
-            </div>
-        </div>
-    </section> -->
-
-    <section class="portfolio" id="portfolio">
-        <div class="bg">
-            <div class="container bag1">
-                <p>------- Project</p>
-                <h2>Selected Project</h2>
-                <p>Ini merupakan beberapa hasil dari project yang telah saya kerjakan</p>
-            </div>
-        </div>
-        <div class="bag2">
-            <div class="card2">
-                <img src="img/portfolio/pulih-farma.png" alt="">
-                <div class="text">
-                    <h2>Apps Apotek Pulih Farma</h2>
-                    <p class="click-me" data-id="1">Click Here for More</p>
+    <!-- // END PORTFOLIO DESIGN AREA -->
+    <!-- START CALL TO ACTION DESIGN AREA -->
+    <section class="call-to-action-area">
+        <div class="container">
+            <div class="row">
+                <!-- START ABOUT TEXT DESIGN AREA -->
+                <div class="col-lg-12">
+                    <div class="call-to-action-part wow fadeInUp delay-0-2s text-center">
+                        <h2>Are You Ready to kickstart your project with a touch of magic?</h2>
+                        <p>Reach out and let's make it happen ✨. I'm also available for full-time or Part-time
+                            opportunities to push the boundaries of design and deliver exceptional work.</p>
+                        <div class="hero-btns">
+                            <a href="contact.html" class="theme-btn">Let's Talk <i class="ri-download-line"></i></a>
+                        </div>
+                    </div>
                 </div>
+                <!-- / END ABOUT TEXT DESIGN AREA -->
             </div>
-            <div class="card2">
-                <img src="img/portfolio/sismac.png" alt="">
-                <div class="text">
-                    <h2>SISMAC</h2>
-                    <p class="click-me" data-id="2">Click Here for More</p>
-                </div>
-            </div>
-            <div class="card2">
-                <img src="img/portfolio/wedding.png" alt="">
-                <div class="text">
-                    <h2>IO Wedding</h2>
-                    <p class="click-me" data-id="3">Click Here for More</p>
-                </div>
-            </div>
-            <div class="card2">
-                <img src="img/portfolio/school.png" alt="">
-                <div class="text">
-                    <h2>Online School</h2>
-                    <p class="click-me" data-id="4">Click Here for More</p>
-                </div>
-            </div>
-            <a href="https://www.instagram.com/giansonia.io/" target="_blank">More About Project >></a>
         </div>
     </section>
-
-
-    <footer>
-        <div class="footer">
-            <h2>Gian Sonia</h2>
-            <p>082321634181</p>
-            <p>giansonia19@gmail.com</p>
-            <div class="sosmed" id="sosmed">
-                <a href="https://www.instagram.com/giansonia.io" target="_blank"> <img src="img/icon/ig.png" alt=""></a>
-                <a href="https://www.facebook.com/gian.lisda" target="_blank"><img src="img/icon/ig(1).png" alt=""></a>
-                <a href="https://wa.me/6282321634181" target="_blank"><img src="img/icon/ig(2).png" alt=""></a>
-                <a href="https://www.tiktok.com/@giansonia.io" target="_blank"><img src="img/icon/ig(3).png" alt=""></a>
+    <!--  // END CALL TO ACTION DESIGN AREA -->
+    <!-- START FOOTER DESIGN AREA -->
+    <footer class="main-footer">
+        <div class="footer-bottom pt-50 pb-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="copyright-text">
+                            <p>
+                                Copyright @2023, <a href="index.html">Bentos</a> All
+                                Rights Reserved.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="copyright-text extra-copyright">
+                            <p>
+                                Crafted with ❤️ Tanvir Hossain
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>Copyright 2022, All Right Reserved</p>
         </div>
     </footer>
-
-    <!-- <section class="school">
-        <div class="foto">
-            <img src="img/LRM_EXPORT_313399679268419_20190310_133647796.jpeg" alt="">
-        </div>
-        <div class="jelas">
-            <p>------- Pendidikan</p>
-            <h2 style="font-size: 30px;">Riwayat Pendidikan</h2>
-            <p>Saya sekarang sedang menginjak bangku kuliah tingkat akhir di kampus STMIK Tasikmalaya</p>
-            <div class="card">
-                <img src="img/icon/s1.png" alt="">
-                <h3>MI TARBIYYATUL UMMAH</h3>
-            </div>
-            <div class="card">
-                <img src="img/icon/s2.png" alt="">
-                <h3>MTS LISDA PASIRANGIN</h3>
-            </div>
-            <div class="card">
-                <img src="img/icon/s3.png" alt="">
-                <h3>MAN 2 KOTA TASIKMALAYA</h3>
-            </div>
-            <div class="card">
-                <img src="img/icon/s3.png" alt="">
-                <h3>STMIK TASIKMALAYA</h3>
-            </div>
-        </div>
-    </section> -->
-
-
-    <script>
-        $(document).ready(function () {
-            $(".hero .judul").addClass('muncul')
-            $(".png .gambar").addClass('muncul')
-            $(".png .icon img:nth-child(1)").addClass('muncul')
-            $(".png .icon img:nth-child(2)").addClass('muncul')
-            $(".png .icon img:nth-child(3)").addClass('muncul')
-        })
-        $(window).scroll(function () {
-            let wScroll = $(this).scrollTop();
-            console.log(wScroll);
-            //Portpolio
-            if (wScroll > 300) {
-                $(".skill .img").addClass('muncul')
-
-            }
-            if (wScroll > 500) {
-                $(".skill2 .text").addClass('muncul')
-            }
-            if (wScroll > 700) {
-                $(".button").addClass('muncul')
-            }
-            if (wScroll > 1400) {
-                $(".experience .container").addClass('muncul')
-            }
-            if (wScroll > 2170) {
-                $(".portfolio .bg").addClass('muncul')
-            }
-
-            if (wScroll > 2500) {
-                $(".portfolio .bag2").addClass('muncul')
-            }
-
-            if (wScroll > 4000) {
-                $(".footer").addClass('muncul')
-            }
-        })
-
-        const burgerIcon = document.querySelector('.burger-icon');
-        const menuItems = document.querySelector('.menu-items');
-
-        burgerIcon.addEventListener('click', () => {
-            menuItems.classList.toggle('active');
-        });
-
-        $(".portfolio").on("click", ".click-me" ,function(){
-            let id = $(this).data("id");
-            if(id == 1) {
-                var text = `<p style="text-align:left">Project ini merupakan project yang bekerja sama dengan apotek pulih farma sebagai client. Aplikasi ini mempunyai fitur diantaranya:</p>
-                <br>
-                <div style="display:flex; justify-content: start;">
-                    <ul style="display:flex; flex-direction:column;align-items:start">
-                        <li>Manajemen Obat</li>    
-                        <li>Manajemen Stok Obat</li>    
-                        <li>Manajemen Pembelian</li>    
-                        <li>Manajemen Penjualan</li>    
-                        <li>Manajemen Return Barang</li>    
-                        <li>Manajemen Stok Opname</li>    
-                    </ul>    
-                </div>
-                <br>
-                <p style="text-align:left">Aplikasi ini dibangun menggunakan framework laravel</p>
-                `
-            } else if(id == 2) {
-                var text = `<p style="text-align:left">Project ini merupakan project yang bekerja sama dengan Mandiri Utama Finance dan Showroom Riffat Jaya Motor sebagai client. aplikasi ini bertujuan untuk mencatat pemasukan dan pengeluaran transaksi serta manajemen stok motor. Aplikasi ini dibangun menggunakan framework laravel</p>
-                `
-            } else if(id == 3){
-                var text = `<p style="text-align:left">Project ini merupakan project yang dikembangkan untuk maksud membuat udadangan digital, aplikasi ini bersifat dinamais dimana aplikasi ini dapat menghasilkan banyak tampilan undangan untuk mempelai yang berbeda-beda. aplikasi ini terdiri dari CRUD yang bertujuan untuk mengimput data pasangan mempelai. apliasi ini dibangun dengan menggunakan framework laravel. <a href="https://io-wedding.my.id/latip-utari-sarimanah-s-pd" target="_blank">Click Here for Example</a></p>
-                `
-
-            } else if(id == 4) {
-                var text = `<p style="text-align:left">Project ini merupakan project yang bekerja sama dengan SMP Persis Gamdok. Aplikasi ini bertujuan sebagai mencatat presensi siswa. Aplikasi ini memanfaatkan web service Twilio sebagai media pemberitahuan absensi kehadiran siswa kepada orang tua menggunakan WhatsApp Aplikasi ini mempunyai fitur diantaranya:</p>
-                <br>
-                <div style="display:flex; justify-content: start;">
-                    <ul style="display:flex; flex-direction:column;align-items:start">
-                        <li>Manajemen Tahun Ajaran</li>    
-                        <li>Manajemen Mata Pelajaran</li>    
-                        <li>Manajemen Guru</li>    
-                        <li>Manajemen Presensi Siswa</li>    
-                    </ul>    
-                </div>
-                <br>
-                <p style="text-align:left">Aplikasi ini dibangun menggunakan framework laravel dengan bantuan API/Webservice Twilio</p>
-                `
-            }
-            Swal.fire({
-                position: "center",
-                icon: "info",
-                html: text,
-                showConfirmButton: false,
-            });
-        })
-
-    </script>
-
-
+    <!-- / END FOOTER DESIGN AREA -->
+    <!-- START SCROOL UP DESIGN AREA -->
+    <div class="progress-wrap cursor-pointer">
+        <i class="ri-arrow-up-double-line"></i>
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- / END SCROOL UP DESIGN AREA -->
+    <!-- JQUERY JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- BOOTSTRAP JS-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- APPEAR JS -->
+    <script src="assets/js/appear.min.js"></script>
+    <!-- GSAP JS -->
+    <script src="assets/js/gsap.min.js"></script>
+    <!-- MAGNIFICANT JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- SLICK JS-->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- NICE SELECT JS-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- IMAGE LOADER JS-->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- ISOTOPE JS-->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!--  WOW ANIMATION JS-->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- SCRIPT JS-->
+    <script src="assets/js/script.js"></script>
 </body>
-
-
-
 
 </html>
