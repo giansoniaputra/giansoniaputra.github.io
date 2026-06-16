@@ -11,7 +11,7 @@
         content="personal, portfolio new, html, one page, bootstrap, new html template, design, creative, onepage, clean, modern">
     <meta name="author" content="Tanvir Hossain">
     <!-- PAGE TITLE -->
-    <title>Gian - Portfolio</title>
+    <title>Contact | Gian's Portfolio</title>
     <!-- FAV ICON -->
     <link rel="apple-touch-icon" href="assets/images/favicon.png">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
@@ -100,8 +100,6 @@
                                 <ul class="navigation onepage clearfix">
                                     <li><a class="nav-link-click" href="index.html">Home</a></li>
                                     <li><a class="nav-link-click" href="about.html">about</a></li>
-                                    <li><a class="nav-link-click" href="service.html">services</a></li>
-                                    <li><a class="nav-link-click" href="works.html">works</a></li>
                                     <li><a class="nav-link-click" href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
@@ -109,7 +107,9 @@
                         <!-- / END NAV DESIGN AREA -->
                     </div>
                     <div class="menu-btns">
-                        <a href="contact.html" class="theme-btn">Hire Me<i class="ri-shake-hands-line"></i></a>
+                        <a target="_blank"
+                            href="https://wa.me/6282321634181?text=Hallo mas Gian, saya kebetulan melihat portfolio anda dan saya ingin berbicara lebih lanjut dengan anda"
+                            class="theme-btn">Get In touch<i class="ri-mail-send-line"></i></a>
                     </div>
                 </div>
             </div>
@@ -347,6 +347,34 @@
                                 </div>
                             </div>
                             <!-- / END SINGLE TESTIMONIALS DESIGN AREA -->
+                            <div class="testimonial-item wow fadeInUp delay-0-3s">
+                                <div class="author">
+                                    <img src="assets/images/user.png" alt="Author" />
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Thank you for delivering such a well-designed and effective Monitoring
+                                        Relationship Manager Submission System.
+                                    </p>
+
+                                    <p>
+                                        The application has significantly improved our ability to monitor, track, and
+                                        recap submissions from Relationship Managers in a more organized and efficient
+                                        manner.
+                                    </p>
+
+                                    <p>
+                                        The system is user-friendly, reliable, and provides valuable insights that
+                                        support better decision-making. We are very satisfied with the final result and
+                                        appreciate the professionalism demonstrated throughout the project.
+                                    </p>
+                                </div>
+                                <div class="testi-des">
+                                    <h5>Mrs. Hana</h5>
+                                    <span>Business Manager II at Jamkrindo</span>
+                                </div>
+                            </div>
+                            <!-- / END SINGLE TESTIMONIALS DESIGN AREA -->
                             <!-- START SINGLE TESTIMONIALS DESIGN AREA -->
 
                         </div>
@@ -375,7 +403,8 @@
                         <p>Reach out and let's make it happen ✨. I'm also available for full-time or Part-time
                             opportunities to push the boundaries of design and deliver exceptional work.</p>
                         <div class="hero-btns">
-                            <a href="contact.html" class="theme-btn">Let's Talk <i class="ri-download-line"></i></a>
+                            <a href="https://wa.me/6282321634181?text=Hallo mas Gian, saya kebetulan melihat portfolio anda dan saya ingin berbicara lebih lanjut dengan anda"
+                                target="_blank" class="theme-btn">Let's Talk <i class="ri-download-line"></i></a>
                         </div>
                     </div>
                 </div>
@@ -392,7 +421,7 @@
                     <div class="col-lg-6">
                         <div class="copyright-text">
                             <p>
-                                Copyright @2023, <a href="index.html">Bentos</a> All
+                                Copyright @<span id="current-year"></span>, <a href="index.html">Gian</a> All
                                 Rights Reserved.
                             </p>
                         </div>
@@ -400,7 +429,7 @@
                     <div class="col-lg-6">
                         <div class="copyright-text extra-copyright">
                             <p>
-                                Crafted with ❤️ Tanvir Hossain
+
                             </p>
                         </div>
                     </div>
@@ -408,6 +437,9 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
     <!-- / END FOOTER DESIGN AREA -->
     <!-- START SCROOL UP DESIGN AREA -->
     <div class="progress-wrap cursor-pointer">
